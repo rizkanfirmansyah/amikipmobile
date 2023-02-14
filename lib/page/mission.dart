@@ -22,7 +22,7 @@ class _MissionAchievementState extends State<Mission> {
             indicatorColor: Color(0xFF8F62F1),
             unselectedLabelColor: Color(0xFF8897A8),
             tabs: [
-              Tab(text: 'Misi'),
+              Tab(text: 'Misiii'),
               Tab(text: 'Pencapaian'),
             ],
           ),
