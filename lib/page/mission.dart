@@ -1,3 +1,4 @@
+import 'package:amikipmobile/page/home.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
@@ -12,6 +13,20 @@ class Mission extends StatefulWidget {
 }
 
 class _MissionAchievementState extends State<Mission> {
+  void _onItemTapped(int index) {
+    setState(() {
+      _selectedIndex = index;
+      if (index == 0) {
+        Navigator.of(context).pushReplacement(
+            MaterialPageRoute(builder: (context) => const Home()));
+      } else if (index == 1) {
+        Navigator.of(context).pushReplacement(
+            MaterialPageRoute(builder: (context) => const Mission()));
+      }
+    });
+  }
+
+  int _selectedIndex = 0;
   @override
   Widget build(BuildContext context) {
     List<int> text = [1, 2, 3, 4];
@@ -378,7 +393,8 @@ class _MissionAchievementState extends State<Mission> {
               label: 'Lainnya',
             ),
           ],
-          currentIndex: 0,
+          currentIndex: 1,
+          onTap: _onItemTapped,
           selectedItemColor: Color.fromRGBO(134, 83, 247, 1),
           unselectedItemColor: Colors.grey,
           showUnselectedLabels: true,
