@@ -1,4 +1,6 @@
+import 'package:amikipmobile/page/mission.dart';
 import 'package:flutter/material.dart';
+import 'page/animate.dart';
 import 'page/home.dart';
 
 void main() {
@@ -26,7 +28,8 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         fontFamily: 'Poppins',
       ),
-      home: const Home(),
+      debugShowCheckedModeBanner: false,
+      home: const Mission(),
     );
   }
 }
