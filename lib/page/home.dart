@@ -46,7 +46,7 @@ class _HomeState extends State<Home> {
         backgroundColor: Colors.transparent,
       ),
       body: SingleChildScrollView(
-        // Banne
+        // Banner
         child: Column(
           children: [
             SafeArea(
@@ -281,8 +281,229 @@ class _HomeState extends State<Home> {
                           fontWeight: FontWeight.w600,
                         ),
                       ),
+                      // Popup
                       onPressed: () {
-                        debugPrint('Button Test!');
+                        showDialog(
+                          context: context,
+                          builder: (BuildContext context) {
+                            return AlertDialog(
+                              scrollable: true,
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.all(
+                                  Radius.circular(10),
+                                ),
+                              ),
+                              titlePadding: EdgeInsets.all(0),
+                              title: Column(
+                                crossAxisAlignment: CrossAxisAlignment.stretch,
+                                children: [
+                                  Align(
+                                    alignment: Alignment.topRight,
+                                    child: IconButton(
+                                      icon: Icon(
+                                        Icons.close,
+                                        color: Color.fromRGBO(18, 18, 18, 1),
+                                        size: 12,
+                                      ),
+                                      onPressed: () {
+                                        Navigator.pop(context);
+                                      },
+                                    ),
+                                  )
+                                ],
+                              ),
+                              content: Container(
+                                height: 463,
+                                width: 344,
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Image.asset('assets/images/archer.png'),
+                                    SizedBox(
+                                      height: 16,
+                                    ),
+                                    Text(
+                                      'Ulangi Perjalanan',
+                                      style: TextStyle(
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.w500,
+                                        color: Color.fromRGBO(18, 18, 18, 1),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height: 8,
+                                    ),
+                                    Text(
+                                      'Mari kita coba lagi kawan',
+                                      style: TextStyle(
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.w400,
+                                        color: Color.fromRGBO(96, 89, 99, 1),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height: 16,
+                                    ),
+                                    SizedBox(
+                                      child: new Center(
+                                        child: new Container(
+                                          margin:
+                                              new EdgeInsetsDirectional.only(
+                                                  start: 1.0, end: 1.0),
+                                          height: 1.0,
+                                          color:
+                                              Color.fromRGBO(231, 236, 243, 1),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height: 24,
+                                    ),
+                                    Text(
+                                      'Setel waktu kegagalan',
+                                      style: TextStyle(
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.w500,
+                                        color: Color.fromRGBO(96, 89, 99, 1),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height: 16,
+                                    ),
+                                    Row(
+                                      children: [
+                                        Expanded(
+                                          child: Container(
+                                            width: 130,
+                                            height: 35,
+                                            decoration: BoxDecoration(
+                                              borderRadius:
+                                                  BorderRadius.circular(10),
+                                              border: Border.all(
+                                                width: 2,
+                                                color: Color.fromRGBO(
+                                                    134, 83, 247, 1),
+                                              ),
+                                            ),
+                                            child: Center(
+                                              child: Text(
+                                                '02:40 PM',
+                                                style: TextStyle(
+                                                  fontSize: 16,
+                                                  fontWeight: FontWeight.w500,
+                                                  color: Color.fromRGBO(
+                                                      96, 89, 99, 1),
+                                                ),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                        SizedBox(
+                                          width: 10,
+                                        ),
+                                        Text(
+                                          'on',
+                                          style: TextStyle(
+                                            fontSize: 14,
+                                            fontWeight: FontWeight.w500,
+                                            color:
+                                                Color.fromRGBO(96, 89, 99, 1),
+                                          ),
+                                        ),
+                                        SizedBox(
+                                          width: 10,
+                                        ),
+                                        Expanded(
+                                          child: Container(
+                                            width: 130,
+                                            height: 35,
+                                            decoration: BoxDecoration(
+                                              borderRadius:
+                                                  BorderRadius.circular(10),
+                                              border: Border.all(
+                                                width: 2,
+                                                color: Color.fromRGBO(
+                                                    134, 83, 247, 1),
+                                              ),
+                                            ),
+                                            child: Center(
+                                              child: Text(
+                                                '1 Feb, Rab',
+                                                style: TextStyle(
+                                                  fontSize: 16,
+                                                  fontWeight: FontWeight.w500,
+                                                  color: Color.fromRGBO(
+                                                      96, 89, 99, 1),
+                                                ),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    SizedBox(
+                                      height: 28,
+                                    ),
+                                    Text(
+                                      'Tambahkan catatan perjalanan',
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.w500,
+                                        fontSize: 14,
+                                        color: Color.fromRGBO(96, 89, 99, 1),
+                                      ),
+                                    ),
+                                    TextField(
+                                      decoration: InputDecoration(
+                                        hintText:
+                                            'Perasaan saya saat mengulang onani itu..',
+                                        hintStyle: TextStyle(
+                                          fontSize: 14,
+                                          fontWeight: FontWeight.w400,
+                                          color:
+                                              Color.fromRGBO(176, 173, 173, 1),
+                                        ),
+                                        enabledBorder: UnderlineInputBorder(
+                                          borderSide: BorderSide(
+                                            width: 1,
+                                            color:
+                                                Color.fromRGBO(96, 89, 99, 1),
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height: 46,
+                                    ),
+                                    ElevatedButton(
+                                      style: ElevatedButton.styleFrom(
+                                        primary:
+                                            Color.fromRGBO(134, 83, 247, 1),
+                                        fixedSize: Size.fromWidth(303),
+                                        padding: EdgeInsets.all(10),
+                                        shape: RoundedRectangleBorder(
+                                          borderRadius:
+                                              BorderRadius.circular(20),
+                                        ),
+                                      ),
+                                      child: Text(
+                                        'Reset Perjalanan',
+                                        style: TextStyle(
+                                          color:
+                                              Color.fromRGBO(255, 255, 255, 1),
+                                          fontSize: 15,
+                                          fontWeight: FontWeight.w600,
+                                        ),
+                                      ),
+                                      onPressed: () {
+                                        Navigator.pop(context);
+                                      },
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            );
+                          },
+                        );
                       },
                     ),
                   ),
