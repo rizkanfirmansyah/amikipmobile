@@ -13,9 +13,9 @@ class Home extends StatefulWidget {
   State<Home> createState() => _HomeState();
 }
 
-final ValueNotifier<double> _valueNotifier = ValueNotifier(25);
-
 class _HomeState extends State<Home> {
+  bool _isShow = true;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -53,57 +53,64 @@ class _HomeState extends State<Home> {
               minimum: const EdgeInsets.all(15),
               child: Column(
                 children: [
-                  Container(
-                    child: Card(
-                      child: Container(
-                        width: 360,
-                        height: 70,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          color: Color.fromRGBO(134, 83, 247, 1),
-                        ),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Container(
-                              transform: Matrix4.translationValues(0, -5, 0),
-                              child: Image.asset(
-                                'assets/images/mage.png',
-                                height: 70,
+                  Visibility(
+                    visible: _isShow,
+                    child: Container(
+                      child: Card(
+                        child: Container(
+                          width: 360,
+                          height: 70,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            color: Color.fromRGBO(134, 83, 247, 1),
+                          ),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Container(
+                                transform: Matrix4.translationValues(0, -5, 0),
+                                child: Image.asset(
+                                  'assets/images/mage.png',
+                                  height: 70,
+                                ),
                               ),
-                            ),
-                            Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Text(
-                                  'Awal yang bagus kawan!',
-                                  style: TextStyle(
-                                    fontSize: 14,
-                                    color: Color.fromRGBO(255, 255, 255, 1),
+                              Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    'Awal yang bagus kawan!',
+                                    style: TextStyle(
+                                      fontSize: 14,
+                                      color: Color.fromRGBO(255, 255, 255, 1),
+                                    ),
                                   ),
-                                ),
-                                Text(
-                                  'Mari pertahankan',
-                                  style: TextStyle(
-                                    fontSize: 14,
-                                    color: Color.fromRGBO(255, 255, 255, 1),
+                                  Text(
+                                    'Mari pertahankan',
+                                    style: TextStyle(
+                                      fontSize: 14,
+                                      color: Color.fromRGBO(255, 255, 255, 1),
+                                    ),
                                   ),
-                                ),
-                              ],
-                            ),
-                            Column(
-                              children: [
-                                IconButton(
-                                  onPressed: () {
-                                    debugPrint('Close btn tapped');
-                                  },
-                                  icon: Icon(Icons.close),
-                                  iconSize: 9,
-                                  color: Color.fromRGBO(255, 255, 255, 1),
-                                )
-                              ],
-                            )
-                          ],
+                                ],
+                              ),
+                              Column(
+                                children: [
+                                  IconButton(
+                                    onPressed: () {
+                                      setState(
+                                        () {
+                                          _isShow = !_isShow;
+                                        },
+                                      );
+                                    },
+                                    icon: Icon(Icons.close),
+                                    iconSize: 9,
+                                    color: Color.fromRGBO(255, 255, 255, 1),
+                                  )
+                                ],
+                              )
+                            ],
+                          ),
                         ),
                       ),
                     ),
