@@ -342,10 +342,10 @@ class _MissionAchievementState extends State<Mission> {
                                                   width: 25,
                                                   height: 25,
                                                 ),
-                                                SizedBox(
+                                                const SizedBox(
                                                   width: 6,
                                                 ),
-                                                Text('10',
+                                                const Text('10',
                                                     style: TextStyle(
                                                         fontSize: 14,
                                                         fontWeight:
@@ -367,7 +367,281 @@ class _MissionAchievementState extends State<Mission> {
                 ],
               ),
             ),
-            Icon(Icons.directions_transit, size: 350),
+            SingleChildScrollView(
+              child: Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(
+                        top: 20, bottom: 15, left: 24, right: 24),
+                    child: Row(
+                      children: const [
+                        Text(
+                          "Total Pencapaian",
+                          style:
+                              TextStyle(fontSize: 16, color: Color(0xFF605963)),
+                        ),
+                        Spacer(),
+                        Text("2/60",
+                            style: TextStyle(
+                                fontSize: 16, color: Color(0xFF121212))),
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 7, left: 10, right: 10),
+                    child: Container(
+                      width: MediaQuery.of(context).size.width - 30,
+                      height: 100,
+                      decoration: BoxDecoration(
+                          color: Colors.white, // Color of the container
+                          borderRadius:
+                              BorderRadius.circular(10), // Radius of the border
+                          border: Border.all(
+                            width: 1.5,
+                            color: Color.fromRGBO(
+                                134, 83, 247, 0.5), // Color of the border
+                          )),
+                      child: Padding(
+                        padding: const EdgeInsets.all(10),
+                        child: Row(
+                          children: [
+                            Image.asset('assets/images/heart.png'),
+                            const SizedBox(
+                              width: 10,
+                            ),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                const Text("Waktu Kebangkitan",
+                                    style: TextStyle(
+                                        fontSize: 16,
+                                        color: Color(0xFF121212))),
+                                const SizedBox(
+                                  height: 5,
+                                ),
+                                SizedBox(
+                                  width:
+                                      MediaQuery.of(context).size.width - 120,
+                                  child: const Text(
+                                    "Pertahankan Kesehatan Penuh selama 3 Hari",
+                                    style: TextStyle(
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.w400,
+                                        color: Color(0xFF928E8E)),
+                                  ),
+                                )
+                              ],
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 7, left: 10, right: 10),
+                    child: Container(
+                      width: MediaQuery.of(context).size.width - 30,
+                      height: 100,
+                      decoration: BoxDecoration(
+                          color: Colors.white, // Color of the container
+                          borderRadius:
+                              BorderRadius.circular(10), // Radius of the border
+                          border: Border.all(
+                            width: 1.5,
+                            color: Color.fromRGBO(
+                                134, 83, 247, 0.5), // Color of the border
+                          )),
+                      child: Padding(
+                        padding: const EdgeInsets.all(10),
+                        child: Row(
+                          children: [
+                            Image.asset('assets/images/coins.png'),
+                            const SizedBox(
+                              width: 10,
+                            ),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                const Text("Keuntungan Pertama",
+                                    style: TextStyle(
+                                        fontSize: 16,
+                                        color: Color(0xFF121212))),
+                                const SizedBox(
+                                  height: 5,
+                                ),
+                                SizedBox(
+                                  width:
+                                      MediaQuery.of(context).size.width - 120,
+                                  child: const Text(
+                                    "Dapatkan koin untuk pertama kalinya",
+                                    style: TextStyle(
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.w400,
+                                        color: Color(0xFF928E8E)),
+                                  ),
+                                )
+                              ],
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 7, left: 10, right: 10),
+                    child: Opacity(
+                      opacity: 0.65,
+                      child: Container(
+                        width: MediaQuery.of(context).size.width - 30,
+                        height: 100,
+                        decoration: BoxDecoration(
+                          color: Colors.white, // Color of the container
+                          borderRadius:
+                              BorderRadius.circular(10), // Radius of the border
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.all(10),
+                          child: Row(
+                            children: [
+                              Image.asset('assets/images/starpink.png'),
+                              const SizedBox(
+                                width: 10,
+                              ),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  const Text("Master Pengendali Diri",
+                                      style: TextStyle(
+                                          fontSize: 16,
+                                          color: Color(0xFF121212))),
+                                  const SizedBox(
+                                    height: 5,
+                                  ),
+                                  SizedBox(
+                                    width:
+                                        MediaQuery.of(context).size.width - 120,
+                                    child: const Text(
+                                      "Naikkan level kendari dirimu menjadi level 10",
+                                      style: TextStyle(
+                                          fontSize: 14,
+                                          fontWeight: FontWeight.w400,
+                                          color: Color(0xFF928E8E)),
+                                    ),
+                                  )
+                                ],
+                              )
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 7, left: 10, right: 10),
+                    child: Opacity(
+                      opacity: 0.65,
+                      child: Container(
+                        width: MediaQuery.of(context).size.width - 30,
+                        height: 100,
+                        decoration: BoxDecoration(
+                          color: Colors.white, // Color of the container
+                          borderRadius:
+                              BorderRadius.circular(10), // Radius of the border
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.all(10),
+                          child: Row(
+                            children: [
+                              Image.asset('assets/images/crowd.png'),
+                              const SizedBox(
+                                width: 10,
+                              ),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  const Text("Sang Raja",
+                                      style: TextStyle(
+                                          fontSize: 16,
+                                          color: Color(0xFF121212))),
+                                  const SizedBox(
+                                    height: 5,
+                                  ),
+                                  SizedBox(
+                                    width:
+                                        MediaQuery.of(context).size.width - 120,
+                                    child: const Text(
+                                      "Tidak melakukan onani selama 90 hari",
+                                      style: TextStyle(
+                                          fontSize: 14,
+                                          fontWeight: FontWeight.w400,
+                                          color: Color(0xFF928E8E)),
+                                    ),
+                                  )
+                                ],
+                              )
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 7, left: 10, right: 10),
+                    child: Opacity(
+                      opacity: 0.65,
+                      child: Container(
+                        width: MediaQuery.of(context).size.width - 30,
+                        height: 100,
+                        decoration: BoxDecoration(
+                          color: Colors.white, // Color of the container
+                          borderRadius:
+                              BorderRadius.circular(10), // Radius of the border
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.all(10),
+                          child: Row(
+                            children: [
+                              Image.asset('assets/images/clock.png'),
+                              const SizedBox(
+                                width: 10,
+                              ),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  const Text("Berpacu dengan waktu",
+                                      style: TextStyle(
+                                          fontSize: 16,
+                                          color: Color(0xFF121212))),
+                                  const SizedBox(
+                                    height: 5,
+                                  ),
+                                  SizedBox(
+                                    width:
+                                        MediaQuery.of(context).size.width - 120,
+                                    child: const Text(
+                                      "Selesaikan meditasi mu dalam waktu 30 menit",
+                                      style: TextStyle(
+                                          fontSize: 14,
+                                          fontWeight: FontWeight.w400,
+                                          color: Color(0xFF928E8E)),
+                                    ),
+                                  )
+                                ],
+                              )
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            )
           ],
         ),
         bottomNavigationBar: BottomNavigationBar(
