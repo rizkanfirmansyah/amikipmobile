@@ -1,4 +1,5 @@
 import 'package:amikipmobile/page/mission.dart';
+import 'package:amikipmobile/page/motivation.dart';
 import 'package:amikipmobile/page/splash.dart';
 import 'package:amikipmobile/page/splash_2.dart';
 import 'package:flutter/material.dart';
@@ -31,7 +32,7 @@ class MyApp extends StatelessWidget {
         fontFamily: 'Poppins',
       ),
       debugShowCheckedModeBanner: false,
-      home: const Splash_2(),
+      home: const Home(),
     );
   }
 }
