@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:amikipmobile/page/mission.dart';
+import 'package:amikipmobile/page/profile.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
@@ -24,6 +25,9 @@ class _HomeState extends State<Home> {
       } else if (index == 1) {
         Navigator.of(context).pushReplacement(
             MaterialPageRoute(builder: (context) => const Mission()));
+      } else if (index == 2) {
+        Navigator.of(context).pushReplacement(
+            MaterialPageRoute(builder: (context) => const Profile()));
       }
     });
   }

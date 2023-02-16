@@ -1,19 +1,19 @@
 import 'package:amikipmobile/page/home.dart';
-import 'package:amikipmobile/page/profile.dart';
+import 'package:amikipmobile/page/mission.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class Mission extends StatefulWidget {
-  const Mission({super.key});
+class Profile extends StatefulWidget {
+  const Profile({super.key});
 
   @override
-  State<Mission> createState() => _MissionAchievementState();
+  State<Profile> createState() => _ProfileState();
 }
 
-class _MissionAchievementState extends State<Mission> {
+class _ProfileState extends State<Profile> {
   void _onItemTapped(int index) {
     setState(() {
       _selectedIndex = index;
@@ -672,7 +672,7 @@ class _MissionAchievementState extends State<Mission> {
               label: 'Lainnya',
             ),
           ],
-          currentIndex: 1,
+          currentIndex: 2,
           onTap: _onItemTapped,
           selectedItemColor: Color.fromRGBO(134, 83, 247, 1),
           unselectedItemColor: Colors.grey,
