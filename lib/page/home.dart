@@ -55,64 +55,78 @@ class _HomeState extends State<Home> {
                 children: [
                   Visibility(
                     visible: _isShow,
-                    child: Container(
-                      child: Card(
-                        child: Container(
-                          width: 360,
-                          height: 70,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            color: Color.fromRGBO(134, 83, 247, 1),
-                          ),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Container(
-                                transform: Matrix4.translationValues(0, -5, 0),
-                                child: Image.asset(
-                                  'assets/images/mage.png',
-                                  height: 70,
+                    child: Stack(
+                      children: [
+                        Container(
+                          child: Card(
+                            child: Container(
+                              width: 360,
+                              height: 70,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(10),
+                                image: DecorationImage(
+                                  image: AssetImage(
+                                    'assets/background/bg_banner.png',
+                                  ),
+                                  fit: BoxFit.cover,
                                 ),
+                                // color: Color.fromRGBO(134, 83, 247, 1),
                               ),
-                              Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
+                              child: Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
                                 children: [
-                                  Text(
-                                    'Awal yang bagus kawan!',
-                                    style: TextStyle(
-                                      fontSize: 14,
-                                      color: Color.fromRGBO(255, 255, 255, 1),
+                                  Container(
+                                    transform:
+                                        Matrix4.translationValues(0, -5, 0),
+                                    child: Image.asset(
+                                      'assets/images/mage.png',
+                                      // height: 70,
                                     ),
                                   ),
-                                  Text(
-                                    'Mari pertahankan',
-                                    style: TextStyle(
-                                      fontSize: 14,
-                                      color: Color.fromRGBO(255, 255, 255, 1),
-                                    ),
+                                  Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Text(
+                                        'Awal yang bagus kawan!',
+                                        style: TextStyle(
+                                          fontSize: 14,
+                                          color:
+                                              Color.fromRGBO(255, 255, 255, 1),
+                                        ),
+                                      ),
+                                      Text(
+                                        'Mari pertahankan',
+                                        style: TextStyle(
+                                          fontSize: 14,
+                                          color:
+                                              Color.fromRGBO(255, 255, 255, 1),
+                                        ),
+                                      ),
+                                    ],
                                   ),
-                                ],
-                              ),
-                              Column(
-                                children: [
-                                  IconButton(
-                                    onPressed: () {
-                                      setState(
-                                        () {
-                                          _isShow = !_isShow;
+                                  Column(
+                                    children: [
+                                      IconButton(
+                                        onPressed: () {
+                                          setState(
+                                            () {
+                                              _isShow = !_isShow;
+                                            },
+                                          );
                                         },
-                                      );
-                                    },
-                                    icon: Icon(Icons.close),
-                                    iconSize: 9,
-                                    color: Color.fromRGBO(255, 255, 255, 1),
+                                        icon: Icon(Icons.close),
+                                        iconSize: 9,
+                                        color: Color.fromRGBO(255, 255, 255, 1),
+                                      )
+                                    ],
                                   )
                                 ],
-                              )
-                            ],
+                              ),
+                            ),
                           ),
                         ),
-                      ),
+                      ],
                     ),
                   ),
                   SizedBox(
@@ -536,7 +550,7 @@ class _HomeState extends State<Home> {
                   SizedBox(
                     height: 16,
                   ),
-                  // ListView
+                  // ListTile
                   Container(
                     width: 345,
                     height: 286,
@@ -547,7 +561,7 @@ class _HomeState extends State<Home> {
                         color: Color.fromRGBO(231, 236, 243, 1),
                       ),
                     ),
-                    child: ListView(
+                    child: Column(
                       children: [
                         Container(
                           decoration: BoxDecoration(
@@ -665,7 +679,7 @@ class _HomeState extends State<Home> {
                   SizedBox(
                     height: 12,
                   ),
-                  // ListView 2
+                  // ListTile 2
                   Container(
                     width: 345,
                     height: 62,
@@ -676,33 +690,29 @@ class _HomeState extends State<Home> {
                         color: Color.fromRGBO(231, 236, 243, 1),
                       ),
                     ),
-                    child: ListView(
-                      children: [
-                        ListTile(
-                          leading: Image.asset('assets/icons/stars_2.png'),
-                          title: Container(
-                            transform: Matrix4.translationValues(-15, 0, 0),
-                            child: Text(
-                              'Opsional',
-                              style: TextStyle(
-                                color: Color.fromRGBO(96, 89, 99, 1),
-                                fontSize: 16,
-                                fontWeight: FontWeight.w500,
-                              ),
-                            ),
-                          ),
-                          trailing: Container(
-                            transform: Matrix4.translationValues(-15, 0, 0),
-                            child: Image.asset('assets/icons/trailing/2.png'),
+                    child: ListTile(
+                      leading: Image.asset('assets/icons/stars_2.png'),
+                      title: Container(
+                        transform: Matrix4.translationValues(-15, 0, 0),
+                        child: Text(
+                          'Opsional',
+                          style: TextStyle(
+                            color: Color.fromRGBO(96, 89, 99, 1),
+                            fontSize: 16,
+                            fontWeight: FontWeight.w500,
                           ),
                         ),
-                      ],
+                      ),
+                      trailing: Container(
+                        transform: Matrix4.translationValues(-15, 0, 0),
+                        child: Image.asset('assets/icons/trailing/2.png'),
+                      ),
                     ),
                   ),
                   SizedBox(
                     height: 12,
                   ),
-                  // ListView 3
+                  // ListTile 3
                   Container(
                     width: 345,
                     height: 62,
@@ -713,28 +723,23 @@ class _HomeState extends State<Home> {
                         color: Color.fromRGBO(231, 236, 243, 1),
                       ),
                     ),
-                    child: ListView(
-                      children: [
-                        ListTile(
-                          leading: Image.asset('assets/icons/stars_3.png'),
-                          title: Container(
-                            transform: Matrix4.translationValues(-15, 0, 0),
-                            child: Text(
-                              'Review hari kamu',
-                              style: TextStyle(
-                                color: Color.fromRGBO(96, 89, 99, 1),
-                                fontSize: 16,
-                                fontWeight: FontWeight.w500,
-                              ),
-                            ),
-                          ),
-                          trailing: IconButton(
-                            icon:
-                                Image.asset('assets/icons/trailing/arrow.png'),
-                            onPressed: () {},
+                    child: ListTile(
+                      leading: Image.asset('assets/icons/stars_3.png'),
+                      title: Container(
+                        transform: Matrix4.translationValues(-15, 0, 0),
+                        child: Text(
+                          'Review hari kamu',
+                          style: TextStyle(
+                            color: Color.fromRGBO(96, 89, 99, 1),
+                            fontSize: 16,
+                            fontWeight: FontWeight.w500,
                           ),
                         ),
-                      ],
+                      ),
+                      trailing: IconButton(
+                        icon: Image.asset('assets/icons/trailing/arrow.png'),
+                        onPressed: () {},
+                      ),
                     ),
                   ),
                   SizedBox(
