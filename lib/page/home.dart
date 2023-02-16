@@ -1,5 +1,6 @@
 import 'dart:ui';
 
+import 'package:amikipmobile/page/mission.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
@@ -14,6 +15,21 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  void _onItemTapped(int index) {
+    setState(() {
+      _selectedIndex = index;
+      if (index == 0) {
+        Navigator.of(context).pushReplacement(
+            MaterialPageRoute(builder: (context) => const Home()));
+      } else if (index == 1) {
+        Navigator.of(context).pushReplacement(
+            MaterialPageRoute(builder: (context) => const Mission()));
+      }
+    });
+  }
+
+  int _selectedIndex = 0;
+
   bool _isShow = true;
 
   @override
@@ -794,6 +810,7 @@ class _HomeState extends State<Home> {
           ),
         ],
         currentIndex: 0,
+        onTap: _onItemTapped,
         selectedItemColor: Color.fromRGBO(134, 83, 247, 1),
         unselectedItemColor: Colors.grey,
         showUnselectedLabels: true,
