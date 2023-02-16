@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
         fontFamily: 'Poppins',
       ),
       debugShowCheckedModeBanner: false,
-      home: const Mission(),
+      home: const Home(),
     );
   }
 }

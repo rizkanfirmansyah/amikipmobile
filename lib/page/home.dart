@@ -787,6 +787,7 @@ class _HomeState extends State<Home> {
       ),
       // Navbar
       bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
