@@ -63,75 +63,249 @@ class _ProfileState extends State<Profile> {
           backgroundColor: Colors.transparent,
         ),
         body: Container(
-          child: Column(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: <Widget>[
-                Expanded(
-                  flex: 1,
-                  child: Row(children: [
-                    Expanded(
-                        flex: 7,
+          child:
+              Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: <
+                  Widget>[
+            Expanded(
+              flex: 1,
+              child: Container(
+                decoration: const BoxDecoration(
+                    image: DecorationImage(
+                        image: AssetImage('assets/background/bg_profile.png'),
+                        fit: BoxFit.fill)),
+                child: Row(children: [
+                  Expanded(
+                      flex: 6,
+                      child: Container(
+                        // color: Color,
+                        child: Image.asset(
+                          'assets/images/hero.png',
+                        ),
+                      )),
+                  Expanded(
+                      flex: 4,
+                      child: Padding(
+                        padding: const EdgeInsets.only(top: 30),
                         child: Container(
-                          color: Colors.green,
-                          child: Image.asset(
-                            'assets/images/hero.png',
-                            height: 300,
-                          ),
-                        )),
-                    Expanded(
-                        flex: 3,
-                        child: Container(
-                          height: 20,
-                          color: Colors.red,
-                        ))
-                  ]),
-                ),
-                Expanded(
-                  flex: 1,
-                  child: DefaultTabController(
-                      length: 3, // length of tabs
-                      initialIndex: 0,
-                      child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.stretch,
-                          children: <Widget>[
-                            Container(
-                              child: const TabBar(
-                                labelColor: Color(0xFF8F62F1),
-                                indicatorColor: Color(0xFF8F62F1),
-                                unselectedLabelColor: Color(0xFF8897A8),
-                                labelStyle: TextStyle(
-                                    fontWeight: FontWeight.w500, fontSize: 16),
-                                tabs: [
-                                  Tab(text: 'Tab 1'),
-                                  Tab(text: 'Tab 2'),
-                                  Tab(text: 'Tab 3'),
+                          child: Row(
+                            children: [
+                              Column(
+                                children: [
+                                  Container(
+                                    decoration: BoxDecoration(
+                                        border: Border.all(
+                                            width: 1.5,
+                                            color: Color(0xFFFEAE6E6)),
+                                        color:
+                                            Color.fromRGBO(221, 219, 219, 0.25),
+                                        borderRadius: BorderRadius.circular(
+                                            5) // Color of the border
+                                        ),
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(7),
+                                      child: Image.asset(
+                                        'assets/images/head-1.png',
+                                        width: 35,
+                                      ),
+                                    ),
+                                  ),
+                                  const SizedBox(height: 10),
+                                  Container(
+                                    decoration: BoxDecoration(
+                                        border: Border.all(
+                                            width: 1.5,
+                                            color: Color(0xFFFEAE6E6)),
+                                        color:
+                                            Color.fromRGBO(221, 219, 219, 0.25),
+                                        borderRadius: BorderRadius.circular(
+                                            5) // Color of the border
+                                        ),
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(7),
+                                      child: Image.asset(
+                                        'assets/images/shirt-1.png',
+                                        width: 35,
+                                      ),
+                                    ),
+                                  ),
+                                  const SizedBox(height: 10),
+                                  Container(
+                                    decoration: BoxDecoration(
+                                        border: Border.all(
+                                            width: 1.5,
+                                            color: Color(0xFFFEAE6E6)),
+                                        color:
+                                            Color.fromRGBO(221, 219, 219, 0.25),
+                                        borderRadius: BorderRadius.circular(
+                                            5) // Color of the border
+                                        ),
+                                    child: Padding(
+                                      padding: const EdgeInsets.only(
+                                          left: 7, right: 7),
+                                      child: Image.asset(
+                                        'assets/images/hand-1.png',
+                                        width: 35,
+                                      ),
+                                    ),
+                                  ),
+                                  const SizedBox(height: 10),
+                                  Container(
+                                    decoration: BoxDecoration(
+                                        border: Border.all(
+                                            width: 1.5,
+                                            color: Color(0xFFFEAE6E6)),
+                                        color:
+                                            Color.fromRGBO(221, 219, 219, 0.25),
+                                        borderRadius: BorderRadius.circular(
+                                            5) // Color of the border
+                                        ),
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(7),
+                                      child: Image.asset(
+                                        'assets/images/leg-1.png',
+                                        width: 35,
+                                      ),
+                                    ),
+                                  ),
                                 ],
                               ),
-                            ),
-                            Expanded(
-                              child: SingleChildScrollView(
-                                child: Container(
-                                    height: 400, //height of TabBarView
-                                    decoration: BoxDecoration(
-                                        border: Border(
-                                            top: BorderSide(
-                                                color: Colors.grey,
-                                                width: 0.5))),
-                                    child: TabBarView(children: <Widget>[
-                                      Container(
-                                        child: Center(
-                                          child: Text('Display Tab 1',
-                                              style: TextStyle(
-                                                  fontSize: 22,
-                                                  fontWeight: FontWeight.bold)),
-                                        ),
-                                      ),
-                                    ])),
+                              SizedBox(
+                                width: 20,
                               ),
-                            )
-                          ])),
-                ),
-              ]),
+                              Column(
+                                children: [
+                                  Container(
+                                    decoration: BoxDecoration(
+                                        border: Border.all(
+                                            width: 1.5,
+                                            color: Color(0xFFFEAE6E6)),
+                                        color:
+                                            Color.fromRGBO(221, 219, 219, 0.25),
+                                        borderRadius: BorderRadius.circular(
+                                            5) // Color of the border
+                                        ),
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(25),
+                                      child: SvgPicture.asset(
+                                          'assets/icons/none.svg'),
+                                    ),
+                                  ),
+                                  const SizedBox(height: 10),
+                                  Container(
+                                    decoration: BoxDecoration(
+                                        border: Border.all(
+                                            width: 1.5,
+                                            color: Color(0xFFFEAE6E6)),
+                                        color:
+                                            Color.fromRGBO(221, 219, 219, 0.25),
+                                        borderRadius: BorderRadius.circular(
+                                            5) // Color of the border
+                                        ),
+                                    child: Padding(
+                                      padding: const EdgeInsets.only(
+                                          left: 25,
+                                          right: 25,
+                                          top: 18,
+                                          bottom: 18),
+                                      child: SvgPicture.asset(
+                                          'assets/icons/none.svg'),
+                                    ),
+                                  ),
+                                  const SizedBox(height: 10),
+                                  Container(
+                                    decoration: BoxDecoration(
+                                        border: Border.all(
+                                            width: 1.5,
+                                            color: Color(0xFFFEAE6E6)),
+                                        color:
+                                            Color.fromRGBO(221, 219, 219, 0.25),
+                                        borderRadius: BorderRadius.circular(
+                                            5) // Color of the border
+                                        ),
+                                    child: Padding(
+                                      padding: const EdgeInsets.only(
+                                          top: 5, bottom: 5),
+                                      child: Image.asset(
+                                        'assets/images/bg_hero.png',
+                                        width: 50,
+                                      ),
+                                    ),
+                                  ),
+                                  const SizedBox(height: 10),
+                                  Container(
+                                    decoration: BoxDecoration(
+                                        border: Border.all(
+                                            width: 1.5,
+                                            color: Color(0xFFFEAE6E6)),
+                                        color:
+                                            Color.fromRGBO(221, 219, 219, 0.25),
+                                        borderRadius: BorderRadius.circular(
+                                            5) // Color of the border
+                                        ),
+                                    child: Padding(
+                                      padding: const EdgeInsets.only(
+                                          left: 25,
+                                          right: 25,
+                                          top: 15,
+                                          bottom: 15),
+                                      child: SvgPicture.asset(
+                                          'assets/icons/none.svg'),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                      ))
+                ]),
+              ),
+            ),
+            Expanded(
+              flex: 1,
+              child: DefaultTabController(
+                  length: 3, // length of tabs
+                  initialIndex: 0,
+                  child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: <Widget>[
+                        Container(
+                          child: const TabBar(
+                            labelColor: Color(0xFF8F62F1),
+                            indicatorColor: Color(0xFF8F62F1),
+                            unselectedLabelColor: Color(0xFF8897A8),
+                            labelStyle: TextStyle(
+                                fontWeight: FontWeight.w500, fontSize: 16),
+                            tabs: [
+                              Tab(text: 'Status'),
+                              Tab(text: 'Penyimpanan'),
+                              Tab(text: 'Toko'),
+                            ],
+                          ),
+                        ),
+                        Expanded(
+                          child: SingleChildScrollView(
+                            child: Container(
+                                height: 400, //height of TabBarView
+                                decoration: BoxDecoration(
+                                    border: Border(
+                                        top: BorderSide(
+                                            color: Colors.grey, width: 0.5))),
+                                child: TabBarView(children: <Widget>[
+                                  Container(
+                                    child: Center(
+                                      child: Text('Display Tab 1',
+                                          style: TextStyle(
+                                              fontSize: 22,
+                                              fontWeight: FontWeight.bold)),
+                                    ),
+                                  ),
+                                ])),
+                          ),
+                        )
+                      ])),
+            ),
+          ]),
         ),
         bottomNavigationBar: BottomNavigationBar(
           type: BottomNavigationBarType.fixed,
