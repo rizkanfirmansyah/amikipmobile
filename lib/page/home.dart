@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:percent_indicator/percent_indicator.dart';
+import 'package:amikipmobile/page/animate.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -34,6 +35,8 @@ class _HomeState extends State<Home> {
 
   int _selectedIndex = 0;
 
+  TextEditingController note = TextEditingController();
+
   bool _isShow = true;
 
   @override
@@ -48,12 +51,6 @@ class _HomeState extends State<Home> {
               debugPrint('Bell img tapped');
             },
             icon: Image.asset('assets/icons/bell.png'),
-          ),
-          IconButton(
-            onPressed: () {
-              debugPrint('Warning img tapped');
-            },
-            icon: Image.asset('assets/icons/warning.png'),
           ),
           IconButton(
             onPressed: () {
@@ -511,6 +508,7 @@ class _HomeState extends State<Home> {
                                           ),
                                         ),
                                       ),
+                                      controller: note,
                                     ),
                                     SizedBox(
                                       height: 46,
@@ -674,24 +672,30 @@ class _HomeState extends State<Home> {
                             onPressed: () {},
                           ),
                         ),
-                        ListTile(
-                          leading: Image.asset('assets/icons/wind.png'),
-                          title: Container(
-                            transform: Matrix4.translationValues(-15, 0, 0),
-                            child: Text(
-                              'Ambil nafas dalam',
-                              style: TextStyle(
-                                color: Color.fromRGBO(96, 89, 99, 1),
-                                fontSize: 16,
-                                fontWeight: FontWeight.w500,
+                        InkWell(
+                          child: ListTile(
+                            leading: Image.asset('assets/icons/wind.png'),
+                            title: Container(
+                              transform: Matrix4.translationValues(-15, 0, 0),
+                              child: Text(
+                                'Ambil nafas dalam',
+                                style: TextStyle(
+                                  color: Color.fromRGBO(96, 89, 99, 1),
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w500,
+                                ),
                               ),
                             ),
+                            trailing: IconButton(
+                              icon: Image.asset(
+                                  'assets/icons/trailing/arrow.png'),
+                              onPressed: () {},
+                            ),
                           ),
-                          trailing: IconButton(
-                            icon:
-                                Image.asset('assets/icons/trailing/arrow.png'),
-                            onPressed: () {},
-                          ),
+                          onTap: () {
+                            Navigator.of(context).push(MaterialPageRoute(
+                                builder: (context) => Animate()));
+                          },
                         ),
                       ],
                     ),

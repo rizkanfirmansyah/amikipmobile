@@ -50,23 +50,17 @@ class _MissionAchievementState extends State<Mission> {
           ),
           title: Image.asset('assets/icons/logo.png'),
           actions: [
-            GestureDetector(
-              onTap: () {
+            IconButton(
+              onPressed: () {
                 debugPrint('Bell img tapped');
               },
-              child: Image.asset('assets/icons/bell.png'),
+              icon: Image.asset('assets/icons/bell.png'),
             ),
-            GestureDetector(
-              onTap: () {
-                debugPrint('Warning img tapped');
-              },
-              child: Image.asset('assets/icons/warning.png'),
-            ),
-            GestureDetector(
-              onTap: () {
+            IconButton(
+              onPressed: () {
                 debugPrint('Profile img tapped');
               },
-              child: Image.asset('assets/icons/profile.png'),
+              icon: Image.asset('assets/icons/profile.png'),
             ),
           ],
           elevation: 0,

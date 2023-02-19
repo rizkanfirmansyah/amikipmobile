@@ -15,9 +15,9 @@ class _AnimateState extends State<Animate> {
     return Scaffold(
       backgroundColor: const Color(0xFF8653F7),
       appBar: AppBar(
-        title: SvgPicture.asset('assets/icons/arrowL.svg'),
+        // title: SvgPicture.asset('assets/icons/arrowL.svg'),
         flexibleSpace: Padding(
-            padding: const EdgeInsets.only(top: 2),
+            padding: const EdgeInsets.only(top: 25),
             child: Center(
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
