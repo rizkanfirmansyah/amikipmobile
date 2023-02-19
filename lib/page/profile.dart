@@ -85,7 +85,7 @@ class _ProfileState extends State<Profile> {
                   Expanded(
                       flex: 4,
                       child: Padding(
-                        padding: const EdgeInsets.only(top: 30),
+                        padding: const EdgeInsets.only(top: 20),
                         child: Container(
                           child: Row(
                             children: [
@@ -287,18 +287,16 @@ class _ProfileState extends State<Profile> {
                           child: SingleChildScrollView(
                             child: Container(
                                 height: 400, //height of TabBarView
-                                decoration: BoxDecoration(
+                                decoration: const BoxDecoration(
                                     border: Border(
                                         top: BorderSide(
                                             color: Colors.grey, width: 0.5))),
                                 child: TabBarView(children: <Widget>[
-                                  Container(
-                                    child: Center(
-                                      child: Text('Display Tab 1',
-                                          style: TextStyle(
-                                              fontSize: 22,
-                                              fontWeight: FontWeight.bold)),
-                                    ),
+                                  Column(
+                                    children: [Text('cobaa')],
+                                  ),
+                                  Column(
+                                    children: [Text('cobaa')],
                                   ),
                                 ])),
                           ),
