@@ -2,6 +2,7 @@ import 'package:amikipmobile/page/mission.dart';
 import 'package:amikipmobile/page/motivation.dart';
 import 'package:amikipmobile/page/splash.dart';
 import 'package:amikipmobile/page/splash_2.dart';
+import 'package:amikipmobile/page/welcome.dart';
 import 'package:flutter/material.dart';
 import 'page/animate.dart';
 import 'page/home.dart';
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
         fontFamily: 'Poppins',
       ),
       debugShowCheckedModeBanner: false,
-      home: const Home(),
+      home: const Splash(),
     );
   }
 }
