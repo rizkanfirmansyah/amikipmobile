@@ -1,5 +1,6 @@
 import 'package:amikipmobile/page/home.dart';
 import 'package:amikipmobile/page/mission.dart';
+import 'package:amikipmobile/widgets/appbar.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
@@ -37,30 +38,9 @@ class _ProfileState extends State<Profile> {
     return DefaultTabController(
       length: 2,
       child: Scaffold(
-        appBar: AppBar(
-          title: Image.asset('assets/icons/logo.png'),
-          actions: [
-            GestureDetector(
-              onTap: () {
-                debugPrint('Bell img tapped');
-              },
-              child: Image.asset('assets/icons/bell.png'),
-            ),
-            GestureDetector(
-              onTap: () {
-                debugPrint('Warning img tapped');
-              },
-              child: Image.asset('assets/icons/warning.png'),
-            ),
-            GestureDetector(
-              onTap: () {
-                debugPrint('Profile img tapped');
-              },
-              child: Image.asset('assets/icons/profile.png'),
-            ),
-          ],
-          elevation: 0,
-          backgroundColor: Colors.transparent,
+        appBar: const PreferredSize(
+          preferredSize: Size.fromHeight(60),
+          child: AppBarWidget(),
         ),
         body: Container(
           child:
@@ -293,10 +273,114 @@ class _ProfileState extends State<Profile> {
                                             color: Colors.grey, width: 0.5))),
                                 child: TabBarView(children: <Widget>[
                                   Column(
-                                    children: [Text('cobaa')],
+                                    children: [
+                                      Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Container(
+                                          decoration: BoxDecoration(
+                                              color: Colors.white,
+                                              borderRadius:
+                                                  BorderRadius.circular(10)),
+                                          child: Column(
+                                            children: [
+                                              Row(
+                                                children: [
+                                                  Expanded(
+                                                      flex: 1,
+                                                      child: Image.asset(
+                                                          'assets/images/element.png')),
+                                                  Expanded(
+                                                      flex: 3,
+                                                      child: Container(
+                                                        child: Column(
+                                                          crossAxisAlignment:
+                                                              CrossAxisAlignment
+                                                                  .start,
+                                                          children: [
+                                                            Text("Teguh Iqbal"),
+                                                            Text(
+                                                                "Lvl 1 Penyihir"),
+                                                          ],
+                                                        ),
+                                                      )),
+                                                  Expanded(
+                                                      flex: 1,
+                                                      child: Container(
+                                                        decoration: BoxDecoration(
+                                                            color: Color(
+                                                                0xFFFAF1E2),
+                                                            borderRadius:
+                                                                BorderRadius.only(
+                                                                    topRight: Radius
+                                                                        .circular(
+                                                                            10))),
+                                                        child: Padding(
+                                                          padding:
+                                                              const EdgeInsets
+                                                                      .only(
+                                                                  top: 20,
+                                                                  bottom: 20,
+                                                                  left: 8),
+                                                          child: Column(
+                                                            children: [
+                                                              Row(
+                                                                children: [
+                                                                  Image.asset(
+                                                                      'assets/images/coin.png'),
+                                                                  const SizedBox(
+                                                                    width: 5,
+                                                                  ),
+                                                                  const Text(
+                                                                    "30",
+                                                                    style: TextStyle(
+                                                                        fontSize:
+                                                                            14,
+                                                                        fontWeight:
+                                                                            FontWeight
+                                                                                .w700,
+                                                                        color: Color(
+                                                                            0xFF70521A)),
+                                                                  )
+                                                                ],
+                                                              ),
+                                                              const SizedBox(
+                                                                height: 5,
+                                                              ),
+                                                              Row(
+                                                                children: [
+                                                                  Image.asset(
+                                                                      'assets/images/diamond.png'),
+                                                                  const SizedBox(
+                                                                    width: 5,
+                                                                  ),
+                                                                  const Text(
+                                                                      "0",
+                                                                      style: TextStyle(
+                                                                          fontSize:
+                                                                              14,
+                                                                          fontWeight: FontWeight
+                                                                              .w700,
+                                                                          color:
+                                                                              Color(0xFF339471)))
+                                                                ],
+                                                              ),
+                                                            ],
+                                                          ),
+                                                        ),
+                                                      )),
+                                                ],
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                      )
+                                    ],
                                   ),
                                   Column(
-                                    children: [Text('cobaa')],
+                                    children: [Text('coba')],
+                                  ),
+                                  Column(
+                                    children: [Text('cob')],
                                   ),
                                 ])),
                           ),
