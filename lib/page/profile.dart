@@ -408,7 +408,7 @@ class _ProfileState extends State<Profile> {
                                                   padding:
                                                       const EdgeInsets.only(
                                                           top: 16,
-                                                          bottom: 6,
+                                                          bottom: 16,
                                                           left: 20,
                                                           right: 20),
                                                   child: Column(
@@ -533,13 +533,13 @@ class _ProfileState extends State<Profile> {
                                                                     animationDuration:
                                                                         800,
                                                                     percent:
-                                                                        1.0,
+                                                                        0.1,
                                                                     barRadius:
                                                                         const Radius.circular(
                                                                             10),
                                                                     progressColor:
                                                                         Color(
-                                                                            0xFFF86366),
+                                                                            0xFFFFB942),
                                                                     backgroundColor:
                                                                         Color(
                                                                             0xFFEFE9E9),
@@ -562,14 +562,66 @@ class _ProfileState extends State<Profile> {
                                                                               .spaceBetween,
                                                                       children: const [
                                                                         Text(
-                                                                          "50/50",
+                                                                          "5/50",
                                                                           style: TextStyle(
                                                                               fontSize: 14,
                                                                               color: Color(0xFF928E8E),
                                                                               fontWeight: FontWeight.w600),
                                                                         ),
                                                                         Text(
-                                                                          "Kesehatan",
+                                                                          "Kendali Diri",
+                                                                          style: TextStyle(
+                                                                              fontSize: 14,
+                                                                              color: Color(0xFF928E8E),
+                                                                              fontWeight: FontWeight.w500),
+                                                                        ),
+                                                                      ],
+                                                                    ),
+                                                                  ),
+                                                                ),
+                                                              ],
+                                                            ),
+                                                          ),
+                                                        ],
+                                                      ),
+                                                      SizedBox(
+                                                        height: 10,
+                                                      ),
+                                                      Row(
+                                                        children: [
+                                                          Expanded(
+                                                            flex: 1,
+                                                            child: Column(
+                                                              children: [
+                                                                Image.asset(
+                                                                  'assets/images/stats.png',
+                                                                  width: 30,
+                                                                )
+                                                              ],
+                                                            ),
+                                                          ),
+                                                          Expanded(
+                                                            flex: 10,
+                                                            child: Column(
+                                                              children: [
+                                                                Padding(
+                                                                  padding: const EdgeInsets
+                                                                          .only(
+                                                                      top: 4,
+                                                                      left: 10,
+                                                                      right:
+                                                                          10),
+                                                                  child:
+                                                                      SizedBox(
+                                                                    width: double
+                                                                        .infinity,
+                                                                    child: Row(
+                                                                      mainAxisAlignment:
+                                                                          MainAxisAlignment
+                                                                              .end,
+                                                                      children: const [
+                                                                        Text(
+                                                                          "Dibuka saat kamu level 10",
                                                                           style: TextStyle(
                                                                               fontSize: 14,
                                                                               color: Color(0xFF928E8E),
