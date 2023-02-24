@@ -1,6 +1,7 @@
 import 'package:amikipmobile/page/home.dart';
 import 'package:amikipmobile/page/mission.dart';
 import 'package:amikipmobile/widgets/appbar.dart';
+import 'package:dropdown_button2/dropdown_button2.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
@@ -32,10 +33,24 @@ class _ProfileState extends State<Profile> {
     });
   }
 
+  final List<String> items = [
+    'Kepala',
+    'Baju',
+    'Tangan',
+    'Sepatu',
+  ];
+  String? selectedValue;
+
   int _selectedIndex = 0;
   @override
   Widget build(BuildContext context) {
-    List<int> text = [1, 2, 3, 4];
+    List<int> text = [1, 2, 3];
+    final List<String> equipments = [
+      'Kepala',
+      'Baju',
+      'Tangan',
+      'Sepatu',
+    ];
     return DefaultTabController(
       length: 2,
       child: Scaffold(
@@ -642,11 +657,205 @@ class _ProfileState extends State<Profile> {
                                               ))
                                         ],
                                       ),
-                                      Column(
-                                        children: [Text("hehehehe")],
+                                      Container(
+                                        color: Colors.white,
+                                        child: Padding(
+                                          padding:
+                                              const EdgeInsets.only(top: 15),
+                                          child: Column(
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.start,
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
+                                            children: [
+                                              for (var i in text)
+                                                Padding(
+                                                  padding:
+                                                      const EdgeInsets.only(
+                                                          top: 15,
+                                                          left: 7.5,
+                                                          right: 7.5),
+                                                  child: Row(
+                                                      children: equipments
+                                                          .map(
+                                                            (item) => Expanded(
+                                                              flex: 1,
+                                                              child: Padding(
+                                                                padding:
+                                                                    const EdgeInsets
+                                                                            .only(
+                                                                        left:
+                                                                            7.5,
+                                                                        right:
+                                                                            7.5),
+                                                                child: Column(
+                                                                  children: [
+                                                                    Container(
+                                                                      constraints: const BoxConstraints(
+                                                                          minHeight:
+                                                                              70,
+                                                                          minWidth: double
+                                                                              .infinity,
+                                                                          maxHeight:
+                                                                              70),
+                                                                      decoration: BoxDecoration(
+                                                                          color: const Color(
+                                                                              0xFFF8F8F8),
+                                                                          borderRadius:
+                                                                              BorderRadius.circular(5) // Color of the border
+                                                                          ),
+                                                                      child: Padding(
+                                                                          padding: const EdgeInsets.all(20),
+                                                                          child: (() {
+                                                                            if (item ==
+                                                                                'Kepala') {
+                                                                              return Image.asset(
+                                                                                'assets/images/head-1.png',
+                                                                                width: 30,
+                                                                              );
+                                                                            } else if (item ==
+                                                                                'Baju') {
+                                                                              return Image.asset(
+                                                                                'assets/images/shirt-1.png',
+                                                                                width: 30,
+                                                                              );
+                                                                            } else if (item ==
+                                                                                'Tangan') {
+                                                                              return Image.asset(
+                                                                                'assets/images/hand-1.png',
+                                                                                width: 30,
+                                                                              );
+                                                                            } else if (item ==
+                                                                                'Sepatu') {}
+                                                                            return Image.asset(
+                                                                              'assets/images/leg-1.png',
+                                                                              width: 30,
+                                                                            );
+                                                                          }())),
+                                                                    ),
+                                                                    Padding(
+                                                                      padding: const EdgeInsets
+                                                                              .only(
+                                                                          top:
+                                                                              4),
+                                                                      child:
+                                                                          Text(
+                                                                        item,
+                                                                        style: const TextStyle(
+                                                                            fontSize: 12,
+                                                                            color: Color(
+                                                                              0xFF928E8E,
+                                                                            ),
+                                                                            fontWeight: FontWeight.w500),
+                                                                      ),
+                                                                    )
+                                                                  ],
+                                                                ),
+                                                              ),
+                                                            ),
+                                                          )
+                                                          .toList()),
+                                                ),
+                                            ],
+                                          ),
+                                        ),
                                       ),
-                                      Column(
-                                        children: [Text('cob')],
+                                      Container(
+                                        color: Colors.white,
+                                        child: Padding(
+                                          padding: const EdgeInsets.all(18),
+                                          child: Column(
+                                            children: [
+                                              Row(
+                                                children: [
+                                                  Row(
+                                                    children: [
+                                                      Image.asset(
+                                                          'assets/images/diamond.png'),
+                                                      const SizedBox(
+                                                        width: 5,
+                                                      ),
+                                                      const Text("0",
+                                                          style: TextStyle(
+                                                              fontSize: 14,
+                                                              fontWeight:
+                                                                  FontWeight
+                                                                      .w700,
+                                                              color: Color(
+                                                                  0xFF339471)))
+                                                    ],
+                                                  ),
+                                                  const SizedBox(width: 20),
+                                                  Row(
+                                                    children: [
+                                                      Image.asset(
+                                                          'assets/images/coin.png'),
+                                                      const SizedBox(
+                                                        width: 5,
+                                                      ),
+                                                      const Text(
+                                                        "30",
+                                                        style: TextStyle(
+                                                            fontSize: 14,
+                                                            fontWeight:
+                                                                FontWeight.w700,
+                                                            color: Color(
+                                                                0xFF70521A)),
+                                                      )
+                                                    ],
+                                                  ),
+                                                  const Spacer(),
+                                                  Row(
+                                                    children: [
+                                                      Image.asset(
+                                                          'assets/images/material.png'),
+                                                      const SizedBox(width: 5),
+                                                      DropdownButtonHideUnderline(
+                                                        child: DropdownButton2(
+                                                          hint: Text(
+                                                            'Semua',
+                                                            style: TextStyle(
+                                                              fontSize: 14,
+                                                              color: Theme.of(
+                                                                      context)
+                                                                  .hintColor,
+                                                            ),
+                                                          ),
+                                                          items: items
+                                                              .map((item) =>
+                                                                  DropdownMenuItem<
+                                                                      String>(
+                                                                    value: item,
+                                                                    child: Text(
+                                                                      item,
+                                                                      style: const TextStyle(
+                                                                          fontSize:
+                                                                              16,
+                                                                          color:
+                                                                              Color(0xFF928E8E)),
+                                                                    ),
+                                                                  ))
+                                                              .toList(),
+                                                          value: selectedValue,
+                                                          onChanged: (value) {
+                                                            setState(() {
+                                                              selectedValue =
+                                                                  value
+                                                                      as String;
+                                                            });
+                                                          },
+                                                          buttonHeight: 40,
+                                                          buttonWidth: 100,
+                                                          itemHeight: 40,
+                                                        ),
+                                                      ),
+                                                    ],
+                                                  ),
+                                                ],
+                                              )
+                                            ],
+                                          ),
+                                        ),
                                       ),
                                     ])),
                               ),
