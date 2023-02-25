@@ -99,176 +99,231 @@ class _CommunityState extends State<Community> with TickerProviderStateMixin {
             SingleChildScrollView(
               child: Padding(
                 padding: const EdgeInsets.only(
-                  top: 16,
+                  top: 8,
                   right: 11,
                   left: 11,
                 ),
-                child: Container(
-                  width: 353,
-                  height: 219,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
-                    border: Border.all(
-                      width: 2,
-                      color: Color.fromRGBO(231, 236, 243, 1),
-                    ),
-                  ),
-                  child: Padding(
-                    padding: const EdgeInsets.only(
-                      top: 12,
-                      left: 6,
-                      right: 6,
-                    ),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          'Mencapai Hari Ke-90: Bagaimana Rasa Perjuangan Saya Berubah',
-                          style: TextStyle(
-                            fontSize: 16,
-                            fontWeight: FontWeight.w600,
-                            color: Colors.black,
+                child: Column(
+                  children: [
+                    for (var i in text)
+                      Padding(
+                        padding: const EdgeInsets.only(top: 10),
+                        child: Container(
+                          width: double.infinity,
+                          height: 219,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            border: Border.all(
+                              width: 2,
+                              color: Color.fromRGBO(231, 236, 243, 1),
+                            ),
                           ),
-                        ),
-                        SizedBox(
-                          height: 2,
-                        ),
-                        Row(
-                          children: [
-                            Text(
-                              'Goku',
-                              style: TextStyle(
-                                color: Color.fromRGBO(146, 142, 142, 1),
-                                fontWeight: FontWeight.w600,
-                                fontSize: 14,
-                              ),
+                          child: Padding(
+                            padding: const EdgeInsets.only(
+                              top: 12,
+                              left: 6,
+                              right: 6,
                             ),
-                            SizedBox(
-                              width: 6,
-                            ),
-                            SvgPicture.asset('assets/icons/dot.svg'),
-                            SizedBox(
-                              width: 6,
-                            ),
-                            Text(
-                              '4 hari yang lalu',
-                              style: TextStyle(
-                                fontWeight: FontWeight.w400,
-                                fontSize: 12,
-                                color: Color.fromRGBO(96, 89, 99, 1),
-                              ),
-                            ),
-                            SizedBox(
-                              width: 16,
-                            ),
-                            Container(
-                              width: 90,
-                              height: 23,
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(25),
-                                color: Color.fromRGBO(237, 77, 80, 0.1),
-                              ),
-                              child: Padding(
-                                padding: const EdgeInsets.only(
-                                  left: 8,
-                                  top: 5,
-                                  bottom: 5,
-                                  right: 8,
-                                ),
-                                child: Row(
-                                  children: [
-                                    SvgPicture.asset('assets/icons/fire.svg'),
-                                    SizedBox(
-                                      width: 7,
-                                    ),
-                                    Text(
-                                      'Top Thread',
-                                      style: TextStyle(
-                                        fontSize: 10,
-                                        fontWeight: FontWeight.w500,
-                                        color: Color.fromRGBO(248, 99, 102, 1),
-                                      ),
-                                    )
-                                  ],
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                        SizedBox(
-                          height: 8,
-                        ),
-                        Text(
-                          'Sudah 90 hari sejak saya mulai perjuangan NoFap ' +
-                              'saya, dan saya merasa seperti saya telah melalui ' +
-                              'perubahan yang luar biasa ....',
-                          style: TextStyle(
-                            fontWeight: FontWeight.w400,
-                            fontSize: 14,
-                            color: Color.fromRGBO(96, 89, 99, 1),
-                          ),
-                        ),
-                        SizedBox(
-                          height: 12,
-                        ),
-                        Row(
-                          children: [
-                            Padding(
-                              padding: const EdgeInsets.only(
-                                left: 10,
-                              ),
-                              child: Row(
+                            child: Container(
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  // Dynamic Like Button
-                                  GestureDetector(
-                                    onTap: () {
-                                      setState(() {
-                                        _isFavorite = !_isFavorite;
-                                      });
-                                      _controller.reverse().then(
-                                          (value) => _controller.forward());
-                                    },
-                                    child: ScaleTransition(
-                                      scale: Tween(begin: 0.7, end: 1.0)
-                                          .animate(CurvedAnimation(
-                                              parent: _controller,
-                                              curve: Curves.easeOut)),
-                                      child: _isFavorite
-                                          ? const Icon(
-                                              Icons.favorite,
-                                              size: 21,
-                                              color: Color.fromRGBO(
-                                                  248, 99, 102, 1),
-                                            )
-                                          : const Icon(
-                                              Icons.favorite_border,
-                                              size: 21,
-                                            ),
+                                  Text(
+                                    'Mencapai Hari Ke-90: Bagaimana Rasa Perjuangan Saya Berubah',
+                                    style: TextStyle(
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.w600,
+                                      color: Colors.black,
                                     ),
                                   ),
-                                  // End Dynamic Like Button
                                   SizedBox(
-                                    width: 8,
+                                    height: 2,
+                                  ),
+                                  Row(
+                                    children: [
+                                      Text(
+                                        'Goku',
+                                        style: TextStyle(
+                                          color:
+                                              Color.fromRGBO(146, 142, 142, 1),
+                                          fontWeight: FontWeight.w600,
+                                          fontSize: 14,
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        width: 6,
+                                      ),
+                                      SvgPicture.asset('assets/icons/dot.svg'),
+                                      SizedBox(
+                                        width: 6,
+                                      ),
+                                      Text(
+                                        '4 hari yang lalu',
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.w400,
+                                          fontSize: 12,
+                                          color: Color.fromRGBO(96, 89, 99, 1),
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        width: 16,
+                                      ),
+                                      Container(
+                                        width: 90,
+                                        height: 23,
+                                        decoration: BoxDecoration(
+                                          borderRadius:
+                                              BorderRadius.circular(25),
+                                          color:
+                                              Color.fromRGBO(237, 77, 80, 0.1),
+                                        ),
+                                        child: Padding(
+                                          padding: const EdgeInsets.only(
+                                            left: 8,
+                                            top: 5,
+                                            bottom: 5,
+                                            right: 8,
+                                          ),
+                                          child: Row(
+                                            children: [
+                                              SvgPicture.asset(
+                                                  'assets/icons/fire.svg'),
+                                              SizedBox(
+                                                width: 7,
+                                              ),
+                                              Text(
+                                                'Top Thread',
+                                                style: TextStyle(
+                                                  fontSize: 10,
+                                                  fontWeight: FontWeight.w500,
+                                                  color: Color.fromRGBO(
+                                                      248, 99, 102, 1),
+                                                ),
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                  SizedBox(
+                                    height: 8,
                                   ),
                                   Text(
-                                    '108 Love',
+                                    'Sudah 90 hari sejak saya mulai perjuangan NoFap ' +
+                                        'saya, dan saya merasa seperti saya telah melalui ' +
+                                        'perubahan yang luar biasa ....',
                                     style: TextStyle(
-                                      fontSize: 12,
-                                      fontWeight: FontWeight.w500,
-                                      color: Color.fromRGBO(154, 153, 158, 1),
+                                      fontWeight: FontWeight.w400,
+                                      fontSize: 14,
+                                      color: Color.fromRGBO(96, 89, 99, 1),
                                     ),
+                                  ),
+                                  SizedBox(
+                                    height: 11,
+                                  ),
+                                  Row(
+                                    children: [
+                                      Padding(
+                                        padding: const EdgeInsets.only(
+                                          left: 10,
+                                        ),
+                                        child: Row(
+                                          children: [
+                                            // Dynamic Like Button
+                                            GestureDetector(
+                                              onTap: () {
+                                                setState(() {
+                                                  _isFavorite = !_isFavorite;
+                                                });
+                                                _controller.reverse().then(
+                                                    (value) =>
+                                                        _controller.forward());
+                                              },
+                                              child: ScaleTransition(
+                                                scale: Tween(
+                                                        begin: 0.7, end: 1.0)
+                                                    .animate(CurvedAnimation(
+                                                        parent: _controller,
+                                                        curve: Curves.easeOut)),
+                                                child: _isFavorite
+                                                    ? const Icon(
+                                                        Icons.favorite,
+                                                        size: 21,
+                                                        color: Color.fromRGBO(
+                                                            248, 99, 102, 1),
+                                                      )
+                                                    : const Icon(
+                                                        Icons.favorite_border,
+                                                        size: 24,
+                                                        color: Color.fromRGBO(
+                                                            148, 148, 148, 1),
+                                                      ),
+                                              ),
+                                            ),
+                                            // End Dynamic Like Button
+                                            SizedBox(
+                                              width: 8,
+                                            ),
+                                            Text(
+                                              '108 Love',
+                                              style: TextStyle(
+                                                fontSize: 12,
+                                                fontWeight: FontWeight.w500,
+                                                color: Color.fromRGBO(
+                                                    154, 153, 158, 1),
+                                              ),
+                                            ),
+                                            // SizedBox(
+                                            //   width: 26,
+                                            // ),
+                                            Row(
+                                              children: [
+                                                IconButton(
+                                                  icon: SvgPicture.asset(
+                                                      'assets/icons/comment.svg'),
+                                                  onPressed: () {},
+                                                ),
+                                                Text(
+                                                  '8 Komentar',
+                                                  style: TextStyle(
+                                                    fontWeight: FontWeight.w500,
+                                                    fontSize: 12,
+                                                    color: Color.fromRGBO(
+                                                        154, 153, 158, 1),
+                                                  ),
+                                                ),
+                                                SizedBox(
+                                                  width: 110,
+                                                ),
+                                                IconButton(
+                                                  icon: SvgPicture.asset(
+                                                      'assets/icons/save.svg'),
+                                                  onPressed: () {},
+                                                ),
+                                              ],
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ],
                                   ),
                                 ],
                               ),
                             ),
-                          ],
+                          ),
                         ),
-                      ],
-                    ),
-                  ),
+                      ),
+                  ],
                 ),
               ),
-            )
+            ),
+            Column(
+              children: [Text("Hai")],
+            ),
+            Column(
+              children: [Text("Hai 2")],
+            ),
           ],
         ),
         // Navbar

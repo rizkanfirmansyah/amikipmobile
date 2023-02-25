@@ -1,6 +1,7 @@
 import 'package:amikipmobile/page/community.dart';
 import 'package:amikipmobile/page/home.dart';
 import 'package:amikipmobile/page/mission.dart';
+import 'package:amikipmobile/page/motivation.dart';
 import 'package:amikipmobile/page/profile.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -436,7 +437,10 @@ class _OtherState extends State<Other> {
                     ],
                   ),
                 ),
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).push(
+                      MaterialPageRoute(builder: (context) => Motivation()));
+                },
               ),
               SizedBox(
                 height: 24,

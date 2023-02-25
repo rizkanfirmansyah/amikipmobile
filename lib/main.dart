@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
         fontFamily: 'Poppins',
       ),
       debugShowCheckedModeBanner: false,
-      home: const Other(),
+      home: const Community(),
     );
   }
 }
