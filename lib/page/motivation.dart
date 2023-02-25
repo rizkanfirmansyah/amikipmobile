@@ -1,3 +1,4 @@
+import 'package:amikipmobile/page/other.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
@@ -16,7 +17,10 @@ class _MotivationState extends State<Motivation> {
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           color: Colors.black,
-          onPressed: () {},
+          onPressed: () {
+            Navigator.of(context).pushReplacement(
+                MaterialPageRoute(builder: (context) => const Other()));
+          },
         ),
         title: Text(
           'Motivasi',
@@ -95,7 +99,7 @@ class _MotivationState extends State<Motivation> {
               ),
               Container(
                 margin: EdgeInsets.symmetric(vertical: 12),
-                width: 300,
+                width: 400,
                 height: 12,
                 child: ClipRRect(
                   borderRadius: BorderRadius.all(Radius.circular(10)),
@@ -140,7 +144,7 @@ class _MotivationState extends State<Motivation> {
                     IconButton(
                       iconSize: 30,
                       icon: Icon(
-                        Icons.skip_previous_outlined,
+                        Icons.skip_previous,
                         color: Color.fromRGBO(96, 89, 99, 1),
                       ),
                       onPressed: () {},
@@ -157,7 +161,7 @@ class _MotivationState extends State<Motivation> {
                     IconButton(
                       iconSize: 30,
                       icon: Icon(
-                        Icons.skip_next_outlined,
+                        Icons.skip_next,
                         color: Color.fromRGBO(96, 89, 99, 1),
                       ),
                       onPressed: () {},

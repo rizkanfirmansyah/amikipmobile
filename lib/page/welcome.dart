@@ -70,14 +70,14 @@ class _WelcomeState extends State<Welcome> {
                           ),
                         ),
                         SizedBox(
-                          height: 151,
+                          height: 90,
                         ),
                       ],
                     ),
                   ],
                 ),
                 Container(
-                  width: 313,
+                  width: 400,
                   height: 52,
                   child: Directionality(
                     textDirection: TextDirection.rtl,
