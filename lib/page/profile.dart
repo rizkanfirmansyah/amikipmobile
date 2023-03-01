@@ -3,6 +3,7 @@ import 'package:amikipmobile/page/home.dart';
 import 'package:amikipmobile/page/mission.dart';
 import 'package:amikipmobile/page/other.dart';
 import 'package:amikipmobile/widgets/appbar.dart';
+import 'package:amikipmobile/widgets/bottombar.dart';
 import 'package:dropdown_button2/dropdown_button2.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -19,28 +20,6 @@ class Profile extends StatefulWidget {
 }
 
 class _ProfileState extends State<Profile> {
-  void _onItemTapped(int index) {
-    setState(() {
-      _selectedIndex = index;
-      if (index == 0) {
-        Navigator.of(context).pushReplacement(
-            MaterialPageRoute(builder: (context) => const Home()));
-      } else if (index == 1) {
-        Navigator.of(context).pushReplacement(
-            MaterialPageRoute(builder: (context) => const Mission()));
-      } else if (index == 2) {
-        Navigator.of(context).pushReplacement(
-            MaterialPageRoute(builder: (context) => const Profile()));
-      } else if (index == 3) {
-        Navigator.of(context).pushReplacement(
-            MaterialPageRoute(builder: (context) => const Community()));
-      } else if (index == 4) {
-        Navigator.of(context).pushReplacement(
-            MaterialPageRoute(builder: (context) => const Other()));
-      }
-    });
-  }
-
   final List<String> items = [
     'Kepala',
     'Baju',
@@ -59,13 +38,11 @@ class _ProfileState extends State<Profile> {
       'Tangan',
       'Sepatu',
     ];
-    return DefaultTabController(
-      length: 2,
-      child: Scaffold(
+    return Scaffold(
         appBar: const PreferredSize(
           preferredSize: Size.fromHeight(60),
           child: AppBarWidget(
-            info: true,
+            info: false,
           ),
         ),
         body: Container(
@@ -860,6 +837,132 @@ class _ProfileState extends State<Profile> {
                                                     ],
                                                   ),
                                                 ],
+                                              ),
+                                              Row(
+                                                children: [
+                                                  Expanded(
+                                                    flex: 1,
+                                                    child: Padding(
+                                                      padding:
+                                                          const EdgeInsets.only(
+                                                              left: 7.5,
+                                                              right: 7.5),
+                                                      child: Column(
+                                                        children: [
+                                                          Container(
+                                                            constraints:
+                                                                const BoxConstraints(
+                                                                    minHeight:
+                                                                        70,
+                                                                    minWidth: double
+                                                                        .infinity,
+                                                                    maxHeight:
+                                                                        70),
+                                                            decoration: BoxDecoration(
+                                                                color: const Color(
+                                                                    0xFFF8F8F8),
+                                                                borderRadius:
+                                                                    BorderRadius
+                                                                        .circular(
+                                                                            5) // Color of the border
+                                                                ),
+                                                            child: Padding(
+                                                              padding:
+                                                                  const EdgeInsets
+                                                                      .all(20),
+                                                              child:
+                                                                  Image.asset(
+                                                                'assets/images/head-1.png',
+                                                                width: 30,
+                                                              ),
+                                                            ),
+                                                          ),
+                                                          Padding(
+                                                            padding:
+                                                                const EdgeInsets
+                                                                        .only(
+                                                                    top: 4),
+                                                            child: Text(
+                                                              "item",
+                                                              style:
+                                                                  const TextStyle(
+                                                                      fontSize:
+                                                                          12,
+                                                                      color:
+                                                                          Color(
+                                                                        0xFF928E8E,
+                                                                      ),
+                                                                      fontWeight:
+                                                                          FontWeight
+                                                                              .w500),
+                                                            ),
+                                                          )
+                                                        ],
+                                                      ),
+                                                    ),
+                                                  ),
+                                                  Expanded(
+                                                    flex: 1,
+                                                    child: Padding(
+                                                      padding:
+                                                          const EdgeInsets.only(
+                                                              left: 7.5,
+                                                              right: 7.5),
+                                                      child: Column(
+                                                        children: [
+                                                          Container(
+                                                            constraints:
+                                                                const BoxConstraints(
+                                                                    minHeight:
+                                                                        70,
+                                                                    minWidth: double
+                                                                        .infinity,
+                                                                    maxHeight:
+                                                                        70),
+                                                            decoration: BoxDecoration(
+                                                                color: const Color(
+                                                                    0xFFF8F8F8),
+                                                                borderRadius:
+                                                                    BorderRadius
+                                                                        .circular(
+                                                                            5) // Color of the border
+                                                                ),
+                                                            child: Padding(
+                                                              padding:
+                                                                  const EdgeInsets
+                                                                      .all(20),
+                                                              child:
+                                                                  Image.asset(
+                                                                'assets/images/head-1.png',
+                                                                width: 30,
+                                                              ),
+                                                            ),
+                                                          ),
+                                                          Padding(
+                                                            padding:
+                                                                const EdgeInsets
+                                                                        .only(
+                                                                    top: 4),
+                                                            child: Text(
+                                                              "item",
+                                                              style:
+                                                                  const TextStyle(
+                                                                      fontSize:
+                                                                          12,
+                                                                      color:
+                                                                          Color(
+                                                                        0xFF928E8E,
+                                                                      ),
+                                                                      fontWeight:
+                                                                          FontWeight
+                                                                              .w500),
+                                                            ),
+                                                          )
+                                                        ],
+                                                      ),
+                                                    ),
+                                                  ),
+                                                ],
                                               )
                                             ],
                                           ),
@@ -872,37 +975,6 @@ class _ProfileState extends State<Profile> {
                 ),
               ]),
         ),
-        bottomNavigationBar: BottomNavigationBar(
-          type: BottomNavigationBarType.fixed,
-          items: const <BottomNavigationBarItem>[
-            BottomNavigationBarItem(
-              icon: Icon(Icons.home),
-              label: 'Home',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.article),
-              label: 'Misi',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.person),
-              label: 'Profile',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.forum),
-              label: 'Komunitas',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon((Icons.menu)),
-              label: 'Lainnya',
-            ),
-          ],
-          currentIndex: 2,
-          onTap: _onItemTapped,
-          selectedItemColor: Color.fromRGBO(134, 83, 247, 1),
-          unselectedItemColor: Colors.grey,
-          showUnselectedLabels: true,
-        ),
-      ),
-    );
+        bottomNavigationBar: const BottomBarWidget(ID: 2));
   }
 }

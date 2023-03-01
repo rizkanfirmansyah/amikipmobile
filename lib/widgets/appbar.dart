@@ -12,14 +12,16 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      automaticallyImplyLeading: false,
       title: Image.asset('assets/icons/logo.png'),
       actions: [
-        GestureDetector(
-          onTap: () {
-            debugPrint('Bell img tapped');
-          },
-          child: Image.asset('assets/icons/bell.png'),
-        ),
+        if (notification)
+          GestureDetector(
+            onTap: () {
+              debugPrint('Bell img tapped');
+            },
+            child: Image.asset('assets/icons/bell.png'),
+          ),
         if (info)
           GestureDetector(
             onTap: () {
