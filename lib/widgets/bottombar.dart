@@ -23,7 +23,7 @@ class _BottomBarWidgetState extends State<BottomBarWidget> {
   void _onItemTapped(int indexs) {
     setState(() {
       _selectedIndex = indexs;
-      if (_selectedIndex == indexs) {
+      if (_selectedIndex == 99) {
       } else {
         if (indexs == 0) {
           Navigator.of(context).pushReplacement(

@@ -33,6 +33,7 @@ class _ProfileState extends State<Profile> {
   Widget build(BuildContext context) {
     List<int> text = [1, 2, 3];
     final List<String> equipments = [
+      'Semua',
       'Kepala',
       'Baju',
       'Tangan',
@@ -857,7 +858,7 @@ class _ProfileState extends State<Profile> {
                                                                     minWidth: double
                                                                         .infinity,
                                                                     maxHeight:
-                                                                        70),
+                                                                        85),
                                                             decoration: BoxDecoration(
                                                                 color: const Color(
                                                                     0xFFF8F8F8),
@@ -866,37 +867,37 @@ class _ProfileState extends State<Profile> {
                                                                         .circular(
                                                                             5) // Color of the border
                                                                 ),
-                                                            child: Padding(
-                                                              padding:
-                                                                  const EdgeInsets
-                                                                      .all(20),
-                                                              child:
-                                                                  Image.asset(
-                                                                'assets/images/head-1.png',
-                                                                width: 30,
-                                                              ),
+                                                            child: Column(
+                                                              children: [
+                                                                Padding(
+                                                                  padding: const EdgeInsets
+                                                                          .only(
+                                                                      top: 12,
+                                                                      bottom:
+                                                                          7),
+                                                                  child: Image
+                                                                      .asset(
+                                                                    'assets/images/head-1.png',
+                                                                    width: 30,
+                                                                  ),
+                                                                ),
+                                                                Row(
+                                                                  mainAxisAlignment:
+                                                                      MainAxisAlignment
+                                                                          .center,
+                                                                  children: [
+                                                                    Image.asset(
+                                                                        'assets/images/coin.png'),
+                                                                    const SizedBox(
+                                                                      width: 5,
+                                                                    ),
+                                                                    const Text(
+                                                                        '70')
+                                                                  ],
+                                                                )
+                                                              ],
                                                             ),
                                                           ),
-                                                          Padding(
-                                                            padding:
-                                                                const EdgeInsets
-                                                                        .only(
-                                                                    top: 4),
-                                                            child: Text(
-                                                              "item",
-                                                              style:
-                                                                  const TextStyle(
-                                                                      fontSize:
-                                                                          12,
-                                                                      color:
-                                                                          Color(
-                                                                        0xFF928E8E,
-                                                                      ),
-                                                                      fontWeight:
-                                                                          FontWeight
-                                                                              .w500),
-                                                            ),
-                                                          )
                                                         ],
                                                       ),
                                                     ),
@@ -908,57 +909,202 @@ class _ProfileState extends State<Profile> {
                                                           const EdgeInsets.only(
                                                               left: 7.5,
                                                               right: 7.5),
-                                                      child: Column(
-                                                        children: [
-                                                          Container(
-                                                            constraints:
-                                                                const BoxConstraints(
-                                                                    minHeight:
-                                                                        70,
-                                                                    minWidth: double
-                                                                        .infinity,
-                                                                    maxHeight:
-                                                                        70),
-                                                            decoration: BoxDecoration(
-                                                                color: const Color(
-                                                                    0xFFF8F8F8),
-                                                                borderRadius:
-                                                                    BorderRadius
-                                                                        .circular(
-                                                                            5) // Color of the border
+                                                      child: Container(
+                                                        constraints:
+                                                            const BoxConstraints(
+                                                                minHeight: 70,
+                                                                minWidth: double
+                                                                    .infinity,
+                                                                maxHeight: 85),
+                                                        decoration: BoxDecoration(
+                                                            color: const Color(
+                                                                0xFFF8F8F8),
+                                                            borderRadius:
+                                                                BorderRadius
+                                                                    .circular(
+                                                                        5) // Color of the border
+                                                            ),
+                                                        child: Column(
+                                                          children: [
+                                                            Stack(
+                                                              children: [
+                                                                Padding(
+                                                                  padding: const EdgeInsets
+                                                                          .only(
+                                                                      top: 12,
+                                                                      bottom:
+                                                                          7),
+                                                                  child: Image
+                                                                      .asset(
+                                                                    'assets/images/head-1.png',
+                                                                    width: 30,
+                                                                  ),
                                                                 ),
-                                                            child: Padding(
-                                                              padding:
-                                                                  const EdgeInsets
-                                                                      .all(20),
-                                                              child:
-                                                                  Image.asset(
-                                                                'assets/images/head-1.png',
-                                                                width: 30,
-                                                              ),
+                                                                // Padding(
+                                                                //   padding: const EdgeInsets
+                                                                //           .only(
+                                                                //       top: 8,
+                                                                //       bottom:
+                                                                //           7),
+                                                                //   child: Image
+                                                                //       .asset(
+                                                                //     'assets/images/head-1.png',
+                                                                //     width: 30,
+                                                                //   ),
+                                                                // ),
+                                                              ],
                                                             ),
-                                                          ),
-                                                          Padding(
-                                                            padding:
-                                                                const EdgeInsets
-                                                                        .only(
-                                                                    top: 4),
-                                                            child: Text(
-                                                              "item",
-                                                              style:
-                                                                  const TextStyle(
-                                                                      fontSize:
-                                                                          12,
-                                                                      color:
-                                                                          Color(
-                                                                        0xFF928E8E,
-                                                                      ),
-                                                                      fontWeight:
-                                                                          FontWeight
-                                                                              .w500),
+                                                            Row(
+                                                              mainAxisAlignment:
+                                                                  MainAxisAlignment
+                                                                      .center,
+                                                              children: [
+                                                                Image.asset(
+                                                                    'assets/images/coin.png'),
+                                                                const SizedBox(
+                                                                  width: 5,
+                                                                ),
+                                                                const Text('70')
+                                                              ],
+                                                            )
+                                                          ],
+                                                        ),
+                                                      ),
+                                                    ),
+                                                  ),
+                                                  Expanded(
+                                                    flex: 1,
+                                                    child: Padding(
+                                                      padding:
+                                                          const EdgeInsets.only(
+                                                              left: 7.5,
+                                                              right: 7.5),
+                                                      child: Container(
+                                                        constraints:
+                                                            const BoxConstraints(
+                                                                minHeight: 70,
+                                                                minWidth: double
+                                                                    .infinity,
+                                                                maxHeight: 85),
+                                                        decoration: BoxDecoration(
+                                                            color: const Color(
+                                                                0xFFF8F8F8),
+                                                            borderRadius:
+                                                                BorderRadius
+                                                                    .circular(
+                                                                        5) // Color of the border
                                                             ),
-                                                          )
-                                                        ],
+                                                        child: Column(
+                                                          children: [
+                                                            Stack(
+                                                              children: [
+                                                                Padding(
+                                                                  padding: const EdgeInsets
+                                                                          .only(
+                                                                      top: 12,
+                                                                      bottom:
+                                                                          7),
+                                                                  child: Image
+                                                                      .asset(
+                                                                    'assets/images/head-1.png',
+                                                                    width: 30,
+                                                                  ),
+                                                                ),
+                                                                // Padding(
+                                                                //   padding: const EdgeInsets
+                                                                //           .only(
+                                                                //       top: 8,
+                                                                //       bottom:
+                                                                //           7),
+                                                                //   child: Image
+                                                                //       .asset(
+                                                                //     'assets/images/head-1.png',
+                                                                //     width: 30,
+                                                                //   ),
+                                                                // ),
+                                                              ],
+                                                            ),
+                                                            Row(
+                                                              mainAxisAlignment:
+                                                                  MainAxisAlignment
+                                                                      .center,
+                                                              children: [
+                                                                Image.asset(
+                                                                    'assets/images/coin.png'),
+                                                                const SizedBox(
+                                                                  width: 5,
+                                                                ),
+                                                                const Text('70')
+                                                              ],
+                                                            )
+                                                          ],
+                                                        ),
+                                                      ),
+                                                    ),
+                                                  ),
+                                                  Expanded(
+                                                    flex: 1,
+                                                    child: Padding(
+                                                      padding:
+                                                          const EdgeInsets.only(
+                                                              left: 7.5,
+                                                              right: 7.5),
+                                                      child: Container(
+                                                        constraints:
+                                                            const BoxConstraints(
+                                                                minHeight: 70,
+                                                                minWidth: double
+                                                                    .infinity,
+                                                                maxHeight: 85),
+                                                        decoration: BoxDecoration(
+                                                            color: Colors.black,
+                                                            borderRadius:
+                                                                BorderRadius
+                                                                    .circular(
+                                                                        5) // Color of the border
+                                                            ),
+                                                        child: Column(
+                                                          children: [
+                                                            Stack(
+                                                              children: [
+                                                                Padding(
+                                                                    padding: const EdgeInsets
+                                                                            .only(
+                                                                        top: 12,
+                                                                        bottom:
+                                                                            7),
+                                                                    child: SvgPicture
+                                                                        .asset(
+                                                                            'assets/icons/lock.svg')),
+                                                                // Padding(
+                                                                //   padding: const EdgeInsets
+                                                                //           .only(
+                                                                //       top: 8,
+                                                                //       bottom:
+                                                                //           7),
+                                                                //   child: Image
+                                                                //       .asset(
+                                                                //     'assets/images/head-1.png',
+                                                                //     width: 30,
+                                                                //   ),
+                                                                // ),
+                                                              ],
+                                                            ),
+                                                            Row(
+                                                              mainAxisAlignment:
+                                                                  MainAxisAlignment
+                                                                      .center,
+                                                              children: [
+                                                                Image.asset(
+                                                                    'assets/images/coin.png'),
+                                                                const SizedBox(
+                                                                  width: 5,
+                                                                ),
+                                                                const Text('70')
+                                                              ],
+                                                            )
+                                                          ],
+                                                        ),
                                                       ),
                                                     ),
                                                   ),
