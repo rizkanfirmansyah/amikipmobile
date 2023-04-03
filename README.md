@@ -21,7 +21,7 @@ Pornography is a serious threat to young generation. Addiction to pornography is
 <br />
 
 # 🎯. Targeted UN SDG’s
-![image.jpg1](https://user-images.githubusercontent.com/52617204/228844135-9279219f-9e0e-4b67-9db3-fd7644ed9943.png) |![image](https://user-images.githubusercontent.com/57865250/229486916-af9c1d03-a8d9-42e6-9ea7-8aec3c8b0171.png)
+<img width="80%" src="https://user-images.githubusercontent.com/52617204/228844135-9279219f-9e0e-4b67-9db3-fd7644ed9943.png"> | <img width="80%" src="https://user-images.githubusercontent.com/57865250/229486916-af9c1d03-a8d9-42e6-9ea7-8aec3c8b0171.png">
 --- | --- |
 
 <br />
@@ -52,7 +52,7 @@ Nofap Adventure is a unique mobile application designed to help teenagers overco
   
   |Frontend|Backend|Database|Graphic Design|Design| 
 | :----: | :---: | :---------: | :------: | :------: |
-| <img src="https://img.shields.io/badge/flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white"><br> | <img src="https://img.shields.io/badge/firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=white"><br><img src="https://img.shields.io/badge/golang-6DB33F?style=for-the-badge&logo=Go&logoColor=white"> | <img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white"><br>|![Corel Draw](https://img.shields.io/badge/CorelDraw-%234285F4.svg?style=for-the-badge&logo=corel-draw&logoColor=white)|![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
+| <img src="https://img.shields.io/badge/flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white"><br> | <img src="https://img.shields.io/badge/firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=white"><br><img src="https://img.shields.io/badge/golang-03569B?style=for-the-badge&logo=Go&logoColor=white"> | <img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white"><br>|![Corel Draw](https://img.shields.io/badge/CorelDraw-%6DB33F.svg?style=for-the-badge&logo=corel-draw&logoColor=white)|![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
 <br>
   
 </div>
