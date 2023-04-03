@@ -8,14 +8,15 @@
 # 🏃‍♂️. Getting Started
   1. Clone this repository to your local machine.
   2. Make sure you are using the Android emulator with OS 11.
-  3. Run the command <b><i>flutter run</i></b> in your terminal.
+  3. Run the command <b><i>"flutter pub get"</i></b> in your terminal. 
+  3. Run the command <b><i>"flutter run"</i></b> in your terminal.
   4. Now you're ready to explore the APK and enjoy the app!
 
 <br />
 <br />
 
 # ⚠️. The Problem
-Pornography is a serious threat to Indonesia's young generation. Addiction to pornography is not only detrimental to adolescents' mental and physical health, but can also hinder their progress and well-being by reducing productivity and quality of life. Therefore, action is needed to overcome this problem and provide the right solution to protect the future of Indonesia's young generation.
+Pornography is a serious threat to young generation. Addiction to pornography is not only detrimental to adolescents' mental and physical health, but can also hinder their progress and well-being by reducing productivity and quality of life. Therefore, action is needed to overcome this problem and provide the right solution to protect the future of young generation.
 
 <br />
 <br />
