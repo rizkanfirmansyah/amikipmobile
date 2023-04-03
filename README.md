@@ -1,5 +1,5 @@
 # 2023 GDSC Solution Challenge - AMIKIP - NoFap Adventure
-<img width="250" alt="Group 101" src="https://user-images.githubusercontent.com/57865250/229487182-00f9dc7e-f225-4667-93e9-2856aaaf9843.png">
+<img width="400" alt="Group 101" src="https://user-images.githubusercontent.com/57865250/229487182-00f9dc7e-f225-4667-93e9-2856aaaf9843.png">
 
 
 <br />
@@ -62,7 +62,7 @@ help overcome the problem of pornography and masturbation addiction in young gen
 
 
 # 🎥. Demo Video
-<div align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/L4_LWKgKmM0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/L4_LWKgKmM0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <br />
 <br />
