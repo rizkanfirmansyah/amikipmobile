@@ -27,7 +27,7 @@ Pornography is a serious threat to young generation. Addiction to pornography is
 <br />
 <br />
 
-# ❓. What is Escort Escort is an app that allows people who have family members
+# ❓. How can we contribute to addressing the issue of pornography and masturbation among the younger generation?
 NoFap Adventure, present as an innovative solution to
 help overcome the problem of pornography and masturbation addiction in young generation.
 
@@ -62,7 +62,7 @@ help overcome the problem of pornography and masturbation addiction in young gen
 
 
 # 🎥. Demo Video
-Link to watch vidio demo : <a href="https://www.youtube.com/embed/L4_LWKgKmM0">https://www.youtube.com/embed/L4_LWKgKmM0</a> 
+Link to watch video demo : <a href="https://www.youtube.com/embed/L4_LWKgKmM0">https://www.youtube.com/embed/L4_LWKgKmM0</a> 
 
 <br />
 <br />
