@@ -1,3 +1,4 @@
+import 'package:amikipmobile/page/login.dart';
 import 'package:amikipmobile/page/welcome.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -19,7 +20,7 @@ class _SplashState extends State<Splash> {
     super.initState();
     Future.delayed(Duration(seconds: 3)).then((value) => {
           Navigator.of(context).pushReplacement(
-              CupertinoPageRoute(builder: (ctx) => const Welcome())),
+              CupertinoPageRoute(builder: (ctx) => const Login())),
         });
   }
 
