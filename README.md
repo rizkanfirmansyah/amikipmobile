@@ -22,9 +22,7 @@ Pornography is a serious threat to young generation. Addiction to pornography is
 <br />
 
 # 🎯. Targeted UN SDG’s
-![image.jpg1](https://user-images.githubusercontent.com/52617204/228844135-9279219f-9e0e-4b67-9db3-fd7644ed9943.png)
-|![image](https://user-images.githubusercontent.com/57865250/229486916-af9c1d03-a8d9-42e6-9ea7-8aec3c8b0171.png)
-
+![image.jpg1](https://user-images.githubusercontent.com/52617204/228844135-9279219f-9e0e-4b67-9db3-fd7644ed9943.png) |![image](https://user-images.githubusercontent.com/57865250/229486916-af9c1d03-a8d9-42e6-9ea7-8aec3c8b0171.png)
 --- | --- |
 
 <br />
