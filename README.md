@@ -1,6 +1,5 @@
 # 2023 GDSC Solution Challenge - AMIKIP - NoFap Adventure
-<img width="490" alt="Group 101" src="https://user-images.githubusercontent.com/57865250/229487182-00f9dc7e-f225-4667-93e9-2856aaaf9843.png">
-
+<img width="250" alt="Group 101" src="https://user-images.githubusercontent.com/57865250/229487182-00f9dc7e-f225-4667-93e9-2856aaaf9843.png">
 
 
 <br />
@@ -43,7 +42,6 @@ help overcome the problem of pornography and masturbation addiction in young gen
   src="https://user-images.githubusercontent.com/57865250/229487996-3856f62e-9870-4a4a-b850-43068a71b8b8.png"
 />
 
-
 <br />
 <br />
 
@@ -52,22 +50,12 @@ help overcome the problem of pornography and masturbation addiction in young gen
 # 🛰️. Tech Stack
 
 <div align="center">
-  |Frontend|Backend|Database&Storage|Graphic Design|Design| | :----: | :---: |
-  :---------: | :------: | :------: | |
-  <img
-    src="https://img.shields.io/badge/flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white"
-  /><br />
-  |
-  <img
-    src="https://img.shields.io/badge/firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=white"
-  /><br /><img
-    src="https://img.shields.io/badge/golang-2496ED?style=for-the-badge&logo=Go&logoColor=white"
-  />
-  |
-  <img
-    src="https://img.shields.io/badge/adobe-success?style=for-the-badge&logo=corel&logoColor=white"
-  />|
-  ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
+  |Frontend|Backend|Database&Storage|Graphic Design|Design|
+  | :----: | :---: | :---------: | :------: | :------: | 
+  | <img src="https://img.shields.io/badge/flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white"/><br /> | <img
+    src="https://img.shields.io/badge/firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=white"/><br /><img
+    src="https://img.shields.io/badge/golang-2496ED?style=for-the-badge&logo=Go&logoColor=white"/> | <img
+    src="https://img.shields.io/badge/adobe-success?style=for-the-badge&logo=corel&logoColor=white"/> | ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
   <br />
 </div>
 
