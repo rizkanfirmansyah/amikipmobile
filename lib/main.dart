@@ -1,5 +1,7 @@
+import 'package:amikipmobile/page/community.dart';
 import 'package:amikipmobile/page/mission.dart';
 import 'package:amikipmobile/page/motivation.dart';
+import 'package:amikipmobile/page/other.dart';
 import 'package:amikipmobile/page/splash.dart';
 import 'package:amikipmobile/page/splash_2.dart';
 import 'package:amikipmobile/page/welcome.dart';
