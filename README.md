@@ -28,8 +28,7 @@ Pornography is a serious threat to young generation. Addiction to pornography is
 <br />
 
 # ❓. How can we contribute to addressing the issue of pornography and masturbation among the younger generation?
-NoFap Adventure, present as an innovative solution to
-help overcome the problem of pornography and masturbation addiction in young generation.
+Nofap Adventure is a unique mobile application designed to help teenagers overcome their addiction to pornography and masturbation using RPG gaming elements. We offer useful and fun features such as personal development tools and reminders that assist young individuals in their journey towards a healthier lifestyle. By using our app, teenagers can contribute to addressing the issue of pornography and masturbation by actively taking control of their habits and seeking positive alternatives.
 
 <br />
 <br />
@@ -67,7 +66,7 @@ Link to watch video demo : <a href="https://www.youtube.com/embed/L4_LWKgKmM0">h
 <br />
 <br />
 
-# 👨‍👩‍👦. Contributors
+# 🤝. Team
 
 <div align="center">
   <table width="100%">
