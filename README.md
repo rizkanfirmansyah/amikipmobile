@@ -1,33 +1,37 @@
 # 2023 GDSC Solution Challenge - AMIKIP - NoFap Adventure
-<img width="100%" alt="Group 101" src="https://user-images.githubusercontent.com/57865250/229545930-586fa43a-4ea2-46af-8338-0c244b0fee90.png">
 
+<img width="100%" alt="Group 101" src="https://user-images.githubusercontent.com/57865250/229545930-586fa43a-4ea2-46af-8338-0c244b0fee90.png">
 
 <br />
 
 # 🏃‍♂️. Getting Started
-  1. Clone this repository to your local machine.
-  2. Make sure you are using the Android emulator with OS 11.
-  3. Run the command <b><i>"flutter pub get"</i></b> in your terminal. 
-  3. Run the command <b><i>"flutter run"</i></b> in your terminal.
-  4. Now you're ready to explore the APK and enjoy the app!
+
+1. Clone this repository to your local machine.
+2. Make sure you are using the Android emulator with OS 11.
+3. Run the command <b><i>"flutter pub get"</i></b> in your terminal.
+4. Run the command <b><i>"flutter run"</i></b> in your terminal.
+5. Now you're ready to explore the APK and enjoy the app!
 
 <br />
 <br />
 
 # ⚠️. The Problem
+
 Pornography is a serious threat to young generation. Addiction to pornography is not only detrimental to adolescents' mental and physical health, but can also hinder their progress and well-being by reducing productivity and quality of life. Therefore, action is needed to overcome this problem and provide the right solution to protect the future of young generation.
 
 <br />
 <br />
 
 # 🎯. Targeted UN SDG’s
-<img width="80%" src="https://user-images.githubusercontent.com/52617204/228844135-9279219f-9e0e-4b67-9db3-fd7644ed9943.png"> | <img width="80%" src="https://user-images.githubusercontent.com/57865250/229486916-af9c1d03-a8d9-42e6-9ea7-8aec3c8b0171.png">
---- | --- |
+
+| <img width="80%" src="https://user-images.githubusercontent.com/52617204/228844135-9279219f-9e0e-4b67-9db3-fd7644ed9943.png"> | <img width="80%" src="https://user-images.githubusercontent.com/57865250/229486916-af9c1d03-a8d9-42e6-9ea7-8aec3c8b0171.png"> |
+| ----------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
 
 <br />
 <br />
 
 # ❓. How can we contribute to addressing the issue of pornography and masturbation among the younger generation?
+
 Nofap Adventure is a unique mobile application designed to help teenagers overcome their addiction to pornography and masturbation using RPG gaming elements. We offer useful and fun features such as personal development tools and reminders that assist young individuals in their journey towards a healthier lifestyle. By using our app, teenagers can contribute to addressing the issue of pornography and masturbation by actively taking control of their habits and seeking positive alternatives.
 
 <br />
@@ -44,8 +48,6 @@ Nofap Adventure is a unique mobile application designed to help teenagers overco
 <br />
 <br />
 
-
-
 # 🛰️. Tech Stack
 
 <div align="center">
@@ -59,9 +61,9 @@ Nofap Adventure is a unique mobile application designed to help teenagers overco
 
 <br />
 
-
 # 🎥. Demo Video
-Link to watch video demo : <a href="https://www.youtube.com/embed/L4_LWKgKmM0">https://www.youtube.com/embed/L4_LWKgKmM0</a> 
+
+You can watch our video demo in here : <a href="https://www.youtube.com/embed/L4_LWKgKmM0">https://www.youtube.com/embed/L4_LWKgKmM0</a>
 
 <br />
 <br />
