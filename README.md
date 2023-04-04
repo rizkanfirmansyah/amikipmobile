@@ -8,9 +8,10 @@
 
 1. Clone this repository to your local machine.
 2. Make sure you are using the Android emulator with OS 11.
-3. Run the command <b><i>"flutter pub get"</i></b> in your terminal.
-4. Run the command <b><i>"flutter run"</i></b> in your terminal.
-5. Now you're ready to explore the APK and enjoy the app!
+3. Make sure you are using API 30 or lower
+4. Run the command <b><i>"flutter pub get"</i></b> in your terminal.
+5. Run the command <b><i>"flutter run"</i></b> in your terminal.
+6. Now you're ready to explore the APK and enjoy the app!
 
 <br />
 <br />
